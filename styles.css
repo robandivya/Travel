@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* nav css */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(197 203 225);
+    color: white;
+    padding: 22px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 999;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-inline: 20px;
+    color: rgb(22, 17, 17);
+    font-size: 20px;
+}
+
+ul li a:hover {
+    color: rgb(121, 28, 28);
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 25px;
+    color: black;
+    margin-inline: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    color: black;
+}
+
+.logo span {
+    color: teal;
+}
+
+#bar {
+    display: none;
+}
+
+/* nav css end */
+
+/* main page  */
+
+.main {
+    background-image: linear-gradient(45deg,
+            rgba(30, 24, 24, 0.75),
+            rgba(29, 31, 33, 0.3)),
+        url("m2.jpg");
+    opacity: 1.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+.mainText {
+    position: relative;
+    text-align: center;
+    top: 41%;
+    color: #fff;
+    font-size: 28px;
+
+}
+
+.mainText button {
+    width: 140px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 21px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    ;
+}
+
+.mainText button:hover {
+    background-color: orange;
+    transition: 1s ease-in-out;
+    font-size: 25px;
+}
+
+/* main page end */
+
+/* book page  */
+
+.head {
+    text-align: center;
+    padding: 80px;
+}
+
+.head span {
+    color: orange;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.booking img {
+    width: 550px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+.form {
+    margin-inline: 28px;
+    width: 350px;
+    background-color: #fff;
+    padding: 17px;
+    box-shadow: 0px 4px 4px 6px rgb(229, 222, 222);
+    border-radius: 5px;
+
+}
+
+.form input {
+    width: 90%;
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+.form p {
+    margin-top: 20px;
+}
+
+#submit {
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* packages */
+
+.packages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.packages .card {
+    width: 370px;
+    height: 360px;
+    margin-inline: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 6px rgb(229, 222, 222);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.card p {
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+/* packages end */
+
+
+/* Best place*/
+
+.places {
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: auto;
+
+}
+
+.places .placeCard {
+    height: 360px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 6px rgb(229, 222, 222);
+    margin-inline: 22px;
+    margin-top: 22px;
+}
+
+.placeCard img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.placeCard h3 {
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.placeCard p {
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+/* Best place end */
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact img {
+    width: 550px;
+    margin-top: -80px;
+
+
+}
+
+.contactForm {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 0px 4px 4px 6px rgb(229, 222, 222);
+    border-radius: 5px;
+    /* margin: 122px; */
+}
+
+.contactForm input {
+    width: 90%;
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.contactForm p {
+    margin-top: 13px;
+}
+
+.contactForm button {
+    width: 80px;
+    height: 28px;
+    margin-top: 22px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* contact end */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 66px;
+    margin-top: 55px;
+}
+
+.text p {
+    margin-top: 11px;
+}
+
+.loginPage {
+    display: none;
+}
+
+.active1 {
+    display: block;
+    width: 300px;
+    background-color: #fff;
+    padding: 11px;
+    box-shadow: 0px 4px 4px 6px rgb(226, 222, 222);
+    position: fixed;
+    top: 12%;
+    right: 2%;
+    border-radius: 5px;
+}
+
+.active1 input {
+    width: 95%;
+    padding: 6px;
+    margin-top: 13px;
+    border-radius: 5px;
+
+}
+
+.active1 button {
+    width: 80px;
+    height: 28px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* media query  */
+
+@media only screen and (max-width:900px) {
+    ul {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .mainText h1 {
+        font-size: 38px;
+    }
+
+    .booking img {
+        width: 90%;
+    }
+
+    .contact img {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+    .mainText h1 {
+        font-size: 30px;
+    }
+
+    .contactForm {
+        width: 70%;
+    }
+
+
+
+}
